@@ -1,0 +1,102 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+  padding: 20px;
+}
+
+#title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #5c67f2;
+  margin-bottom: 30px; /* Increased margin to separate title from controls */
+}
+
+.lengthControls {
+  display: flex; /* This is a new wrapper for length controls */
+  justify-content: space-around; /* Space around to evenly distribute */
+  width: 100%; /* Full width to accommodate side-by-side layout */
+  max-width: 600px; /* Limiting max width for better visual structure */
+}
+
+.lengthControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  flex: 1; /* Flex property to ensure both controls take equal width */
+}
+
+.control-label, #timer-label {
+  font-size: 18px;
+}
+
+.control-length, #timer-left {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #5c67f2;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a40e0;
+}
+
+.fas {
+  margin-right: 5px;
+}
+
+#timer {
+  width: 80%; /* Larger width to emphasize timer */
+  max-width: 800px; /* Maximum width constraint */
+  border: 2px solid #5c67f2; /* Border around the timer */
+  padding: 20px;
+  margin-top: 20px; /* Space from length controls */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#timer-label{
+  font-size: 3rem;
+
+}
+#timer-left{
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.Session{
+  color: red;
+}
+.Break{
+  color: green;
+}
